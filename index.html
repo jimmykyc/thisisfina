@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="pingback" href="xmlrpc.php" />
+
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+
+	<title>Fine Dog $FINE</title>
+	<meta name='robots' content='max-image-preview:large' />
+	<script type="text/javascript">
+		let jqueryParams = [],
+			jQuery = function (r) {
+				return jqueryParams = [...jqueryParams, r], jQuery
+			},
+			$ = function (r) {
+				return jqueryParams = [...jqueryParams, r], $
+			};
+		window.jQuery = jQuery, window.$ = jQuery;
+		let customHeadScripts = !1;
+		jQuery.fn = jQuery.prototype = {}, $.fn = jQuery.prototype = {}, jQuery.noConflict = function (r) {
+			if (window.jQuery) return jQuery = window.jQuery, $ = window.jQuery, customHeadScripts = !0, jQuery.noConflict
+		}, jQuery.ready = function (r) {
+			jqueryParams = [...jqueryParams, r]
+		}, $.ready = function (r) {
+			jqueryParams = [...jqueryParams, r]
+		}, jQuery.load = function (r) {
+			jqueryParams = [...jqueryParams, r]
+		}, $.load = function (r) {
+			jqueryParams = [...jqueryParams, r]
+		}, jQuery.fn.ready = function (r) {
+			jqueryParams = [...jqueryParams, r]
+		}, $.fn.ready = function (r) {
+			jqueryParams = [...jqueryParams, r]
+		};
+	</script>
+	<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+	<link rel="alternate" type="application/rss+xml" title="Elmo &raquo; Feed" href="https://elmoerc.com/feed/" />
+	<link rel="alternate" type="application/rss+xml" title="Elmo &raquo; Comments Feed"
+		href="https://elmoerc.com/comments/feed/" />
+	<meta content="Child Divi v." name="generator" />
+	<style id='wp-block-library-theme-inline-css' type='text/css'>
+		.wp-block-audio figcaption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-audio figcaption {
+			color: hsla(0, 0%, 100%, .65)
+		}
+
+		.wp-block-audio {
+			margin: 0 0 1em
+		}
+
+		.wp-block-code {
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			font-family: Menlo, Consolas, monaco, monospace;
+			padding: .8em 1em
+		}
+
+		.wp-block-embed figcaption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-embed figcaption {
+			color: hsla(0, 0%, 100%, .65)
+		}
+
+		.wp-block-embed {
+			margin: 0 0 1em
+		}
+
+		.blocks-gallery-caption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .blocks-gallery-caption {
+			color: hsla(0, 0%, 100%, .65)
+		}
+
+		.wp-block-image figcaption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-image figcaption {
+			color: hsla(0, 0%, 100%, .65)
+		}
+
+		.wp-block-image {
+			margin: 0 0 1em
+		}
+
+		.wp-block-pullquote {
+			border-bottom: 4px solid;
+			border-top: 4px solid;
+			color: currentColor;
+			margin-bottom: 1.75em
+		}
+
+		.wp-block-pullquote cite,
+		.wp-block-pullquote footer,
+		.wp-block-pullquote__citation {
+			color: currentColor;
+			font-size: .8125em;
+			font-style: normal;
+			text-transform: uppercase
+		}
+
+		.wp-block-quote {
+			border-left: .25em solid;
+			margin: 0 0 1.75em;
+			padding-left: 1em
+		}
+
+		.wp-block-quote cite,
+		.wp-block-quote footer {
+			color: currentColor;
+			font-size: .8125em;
+			font-style: normal;
+			position: relative
+		}
+
+		.wp-block-quote.has-text-align-right {
+			border-left: none;
+			border-right: .25em solid;
+			padding-left: 0;
+			padding-right: 1em
+		}
+
+		.wp-block-quote.has-text-align-center {
+			border: none;
+			padding-left: 0
+		}
+
+		.wp-block-quote.is-large,
+		.wp-block-quote.is-style-large,
+		.wp-block-quote.is-style-plain {
+			border: none
+		}
+
+		.wp-block-search .wp-block-search__label {
+			font-weight: 700
+		}
+
+		.wp-block-search__button {
+			border: 1px solid #ccc;
+			padding: .375em .625em
+		}
+
+		:where(.wp-block-group.has-background) {
+			padding: 1.25em 2.375em
+		}
+
+		.wp-block-separator.has-css-opacity {
+			opacity: .4
+		}
+
+		.wp-block-separator {
+			border: none;
+			border-bottom: 2px solid;
+			margin-left: auto;
+			margin-right: auto
+		}
+
+		.wp-block-separator.has-alpha-channel-opacity {
+			opacity: 1
+		}
+
+		.wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+			width: 100px
+		}
+
+		.wp-block-separator.has-background:not(.is-style-dots) {
+			border-bottom: none;
+			height: 1px
+		}
+
+		.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
+			height: 2px
+		}
+
+		.wp-block-table {
+			margin: 0 0 1em
+		}
+
+		.wp-block-table td,
+		.wp-block-table th {
+			word-break: normal
+		}
+
+		.wp-block-table figcaption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-table figcaption {
+			color: hsla(0, 0%, 100%, .65)
+		}
+
+		.wp-block-video figcaption {
+			color: #555;
+			font-size: 13px;
+			text-align: center
+		}
+
+		.is-dark-theme .wp-block-video figcaption {
+			color: hsla(0, 0%, 100%, .65)
+		}
+
+		.wp-block-video {
+			margin: 0 0 1em
+		}
+
+		.wp-block-template-part.has-background {
+			margin-bottom: 0;
+			margin-top: 0;
+			padding: 1.25em 2.375em
+		}
+	</style>
+	<style id='global-styles-inline-css' type='text/css'>
+		body {
+			--wp--preset--color--black: #000;
+			--wp--preset--color--cyan-bluish-gray: #abb8c3;
+			--wp--preset--color--white: #fff;
+			--wp--preset--color--pale-pink: #f78da7;
+			--wp--preset--color--vivid-red: #f1da04;
+			--wp--preset--color--luminous-vivid-orange: #ff6900;
+			--wp--preset--color--luminous-vivid-amber: #fcb900;
+			--wp--preset--color--light-green-cyan: #7bdcb5;
+			--wp--preset--color--vivid-green-cyan: #00d084;
+			--wp--preset--color--pale-cyan-blue: #8ed1fc;
+			--wp--preset--color--vivid-cyan-blue: #0693e3;
+			--wp--preset--color--vivid-purple: #9b51e0;
+			--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, #9b51e0 100%);
+			--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, #7adcb4 0%, #00d082 100%);
+			--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+			--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, #f1da04 100%);
+			--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, #eee 0%, #a9b8c3 100%);
+			--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, #4aeadc 0%, #9778d1 20%, #cf2aba 40%, #ee2c82 60%, #fb6962 80%, #fef84c 100%);
+			--wp--preset--gradient--blush-light-purple: linear-gradient(135deg, #ffceec 0%, #9896f0 100%);
+			--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, #fecda5 0%, #f1da04 50%, #6b003e 100%);
+			--wp--preset--gradient--luminous-dusk: linear-gradient(135deg, #ffcb70 0%, #c751c0 50%, #4158d0 100%);
+			--wp--preset--gradient--pale-ocean: linear-gradient(135deg, #fff5cb 0%, #b6e3d4 50%, #33a7b5 100%);
+			--wp--preset--gradient--electric-grass: linear-gradient(135deg, #caf880 0%, #71ce7e 100%);
+			--wp--preset--gradient--midnight: linear-gradient(135deg, #020381 0%, #2874fc 100%);
+			--wp--preset--duotone--dark-grayscale: url(#wp-duotone-dark-grayscale);
+			--wp--preset--duotone--grayscale: url(#wp-duotone-grayscale);
+			--wp--preset--duotone--purple-yellow: url(#wp-duotone-purple-yellow);
+			--wp--preset--duotone--blue-red: url(#wp-duotone-blue-red);
+			--wp--preset--duotone--midnight: url(#wp-duotone-midnight);
+			--wp--preset--duotone--magenta-yellow: url(#wp-duotone-magenta-yellow);
+			--wp--preset--duotone--purple-green: url(#wp-duotone-purple-green);
+			--wp--preset--duotone--blue-orange: url(#wp-duotone-blue-orange);
+			--wp--preset--font-size--small: 13px;
+			--wp--preset--font-size--medium: 20px;
+			--wp--preset--font-size--large: 36px;
+			--wp--preset--font-size--x-large: 42px;
+			--wp--preset--spacing--20: .44rem;
+			--wp--preset--spacing--30: .67rem;
+			--wp--preset--spacing--40: 1rem;
+			--wp--preset--spacing--50: 1.5rem;
+			--wp--preset--spacing--60: 2.25rem;
+			--wp--preset--spacing--70: 3.38rem;
+			--wp--preset--spacing--80: 5.06rem;
+			--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, .2);
+			--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, .4);
+			--wp--preset--shadow--sharp: 6px 6px 0 rgba(0, 0, 0, .2);
+			--wp--preset--shadow--outlined: 6px 6px 0 -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+			--wp--preset--shadow--crisp: 6px 6px 0 rgba(0, 0, 0, 1)
+		}
+
+		body {
+			margin: 0;
+			--wp--style--global--content-size: 823px;
+			--wp--style--global--wide-size: 1080px
+		}
+
+		.wp-site-blocks>.alignleft {
+			float: left;
+			margin-right: 2em
+		}
+
+		.wp-site-blocks>.alignright {
+			float: right;
+			margin-left: 2em
+		}
+
+		.wp-site-blocks>.aligncenter {
+			justify-content: center;
+			margin-left: auto;
+			margin-right: auto
+		}
+
+		:where(.is-layout-flex) {
+			gap: .5em
+		}
+
+		body .is-layout-flow>.alignleft {
+			float: left;
+			margin-inline-start: 0;
+			margin-inline-end: 2em
+		}
+
+		body .is-layout-flow>.alignright {
+			float: right;
+			margin-inline-start: 2em;
+			margin-inline-end: 0
+		}
+
+		body .is-layout-flow>.aligncenter {
+			margin-left: auto !important;
+			margin-right: auto !important
+		}
+
+		body .is-layout-constrained>.alignleft {
+			float: left;
+			margin-inline-start: 0;
+			margin-inline-end: 2em
+		}
+
+		body .is-layout-constrained>.alignright {
+			float: right;
+			margin-inline-start: 2em;
+			margin-inline-end: 0
+		}
+
+		body .is-layout-constrained>.aligncenter {
+			margin-left: auto !important;
+			margin-right: auto !important
+		}
+
+		body .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+			max-width: var(--wp--style--global--content-size);
+			margin-left: auto !important;
+			margin-right: auto !important
+		}
+
+		body .is-layout-constrained>.alignwide {
+			max-width: var(--wp--style--global--wide-size)
+		}
+
+		body .is-layout-flex {
+			display: flex
+		}
+
+		body .is-layout-flex {
+			flex-wrap: wrap;
+			align-items: center
+		}
+
+		body .is-layout-flex>* {
+			margin: 0
+		}
+
+		body {
+			padding-top: 0;
+			padding-right: 0;
+			padding-bottom: 0;
+			padding-left: 0
+		}
+
+		a:where(:not(.wp-element-button)) {
+			text-decoration: underline
+		}
+
+		.wp-element-button,
+		.wp-block-button__link {
+			background-color: #32373c;
+			border-width: 0;
+			color: #fff;
+			font-family: inherit;
+			font-size: inherit;
+			line-height: inherit;
+			padding: calc(0.667em + 2px) calc(1.333em + 2px);
+			text-decoration: none
+		}
+
+		.has-black-color {
+			color: var(--wp--preset--color--black) !important
+		}
+
+		.has-cyan-bluish-gray-color {
+			color: var(--wp--preset--color--cyan-bluish-gray) !important
+		}
+
+		.has-white-color {
+			color: var(--wp--preset--color--white) !important
+		}
+
+		.has-pale-pink-color {
+			color: var(--wp--preset--color--pale-pink) !important
+		}
+
+		.has-vivid-red-color {
+			color: var(--wp--preset--color--vivid-red) !important
+		}
+
+		.has-luminous-vivid-orange-color {
+			color: var(--wp--preset--color--luminous-vivid-orange) !important
+		}
+
+		.has-luminous-vivid-amber-color {
+			color: var(--wp--preset--color--luminous-vivid-amber) !important
+		}
+
+		.has-light-green-cyan-color {
+			color: var(--wp--preset--color--light-green-cyan) !important
+		}
+
+		.has-vivid-green-cyan-color {
+			color: var(--wp--preset--color--vivid-green-cyan) !important
+		}
+
+		.has-pale-cyan-blue-color {
+			color: var(--wp--preset--color--pale-cyan-blue) !important
+		}
+
+		.has-vivid-cyan-blue-color {
+			color: var(--wp--preset--color--vivid-cyan-blue) !important
+		}
+
+		.has-vivid-purple-color {
+			color: var(--wp--preset--color--vivid-purple) !important
+		}
+
+		.has-black-background-color {
+			background-color: var(--wp--preset--color--black) !important
+		}
+
+		.has-cyan-bluish-gray-background-color {
+			background-color: var(--wp--preset--color--cyan-bluish-gray) !important
+		}
+
+		.has-white-background-color {
+			background-color: var(--wp--preset--color--white) !important
+		}
+
+		.has-pale-pink-background-color {
+			background-color: var(--wp--preset--color--pale-pink) !important
+		}
+
+		.has-vivid-red-background-color {
+			background-color: var(--wp--preset--color--vivid-red) !important
+		}
+
+		.has-luminous-vivid-orange-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-orange) !important
+		}
+
+		.has-luminous-vivid-amber-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-amber) !important
+		}
+
+		.has-light-green-cyan-background-color {
+			background-color: var(--wp--preset--color--light-green-cyan) !important
+		}
+
+		.has-vivid-green-cyan-background-color {
+			background-color: var(--wp--preset--color--vivid-green-cyan) !important
+		}
+
+		.has-pale-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--pale-cyan-blue) !important
+		}
+
+		.has-vivid-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--vivid-cyan-blue) !important
+		}
+
+		.has-vivid-purple-background-color {
+			background-color: var(--wp--preset--color--vivid-purple) !important
+		}
+
+		.has-black-border-color {
+			border-color: var(--wp--preset--color--black) !important
+		}
+
+		.has-cyan-bluish-gray-border-color {
+			border-color: var(--wp--preset--color--cyan-bluish-gray) !important
+		}
+
+		.has-white-border-color {
+			border-color: var(--wp--preset--color--white) !important
+		}
+
+		.has-pale-pink-border-color {
+			border-color: var(--wp--preset--color--pale-pink) !important
+		}
+
+		.has-vivid-red-border-color {
+			border-color: var(--wp--preset--color--vivid-red) !important
+		}
+
+		.has-luminous-vivid-orange-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-orange) !important
+		}
+
+		.has-luminous-vivid-amber-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-amber) !important
+		}
+
+		.has-light-green-cyan-border-color {
+			border-color: var(--wp--preset--color--light-green-cyan) !important
+		}
+
+		.has-vivid-green-cyan-border-color {
+			border-color: var(--wp--preset--color--vivid-green-cyan) !important
+		}
+
+		.has-pale-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--pale-cyan-blue) !important
+		}
+
+		.has-vivid-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--vivid-cyan-blue) !important
+		}
+
+		.has-vivid-purple-border-color {
+			border-color: var(--wp--preset--color--vivid-purple) !important
+		}
+
+		.has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+			background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important
+		}
+
+		.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+			background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important
+		}
+
+		.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important
+		}
+
+		.has-luminous-vivid-orange-to-vivid-red-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important
+		}
+
+		.has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+			background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important
+		}
+
+		.has-cool-to-warm-spectrum-gradient-background {
+			background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important
+		}
+
+		.has-blush-light-purple-gradient-background {
+			background: var(--wp--preset--gradient--blush-light-purple) !important
+		}
+
+		.has-blush-bordeaux-gradient-background {
+			background: var(--wp--preset--gradient--blush-bordeaux) !important
+		}
+
+		.has-luminous-dusk-gradient-background {
+			background: var(--wp--preset--gradient--luminous-dusk) !important
+		}
+
+		.has-pale-ocean-gradient-background {
+			background: var(--wp--preset--gradient--pale-ocean) !important
+		}
+
+		.has-electric-grass-gradient-background {
+			background: var(--wp--preset--gradient--electric-grass) !important
+		}
+
+		.has-midnight-gradient-background {
+			background: var(--wp--preset--gradient--midnight) !important
+		}
+
+		.has-small-font-size {
+			font-size: var(--wp--preset--font-size--small) !important
+		}
+
+		.has-medium-font-size {
+			font-size: var(--wp--preset--font-size--medium) !important
+		}
+
+		.has-large-font-size {
+			font-size: var(--wp--preset--font-size--large) !important
+		}
+
+		.has-x-large-font-size {
+			font-size: var(--wp--preset--font-size--x-large) !important
+		}
+
+		.wp-block-navigation a:where(:not(.wp-element-button)) {
+			color: inherit
+		}
+
+		:where(.wp-block-columns.is-layout-flex) {
+			gap: 2em
+		}
+
+		.wp-block-pullquote {
+			font-size: 1.5em;
+			line-height: 1.6
+		}
+	</style>
+	<link rel='stylesheet' id='et-divi-open-sans-css'
+		href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&#038;subset=latin,latin-ext&#038;display=swap'
+		type='text/css' media='all' />
+	<link rel='stylesheet' id='et-builder-googlefonts-cached-css'
+		href='https://fonts.googleapis.com/css?family=Chewy:regular|Cherry+Cream+Soda:regular&#038;subset=latin&#038;display=swap'
+		type='text/css' media='all' />
+	<link rel='stylesheet' id='divi-style-parent-css'
+		href='wp-content/themes/Divi/style-static.min.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='child-style-css'
+		href='wp-content/themes/divi-child/style.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='divi-style-css'
+		href='wp-content/themes/divi-child/style.css' type='text/css' media='all' />
+	<link rel="https://api.w.org/" href="wp-json/" />
+	<link rel="alternate" type="application/json" href="wp-json/wp/v2/pages/12" />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc.php" />
+	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
+	<meta name="generator" content="WordPress 6.2" />
+	<link rel="canonical" href="https://elmoerc.com/" />
+	<link rel='shortlink' href='https://elmoerc.com/' />
+	<link rel="alternate" type="application/json+oembed"
+		href="wp-json/oembed/1.0/embed?url=https%3A%2F%2Felmoerc.com%2F" />
+	<link rel="alternate" type="text/xml+oembed"
+		href="wp-json/oembed/1.0/embed?url=https%3A%2F%2Felmoerc.com%2F&#038;format=xml" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<link rel="icon"
+		href="logo.jpg"
+		sizes="32x32" />
+	<link rel="icon"
+		href="logo.jpg"
+		sizes="192x192" />
+	<link rel="apple-touch-icon"
+		href="logo.jpg" />
+	<meta name="msapplication-TileImage"
+		content="#" />
+	<style id="et-divi-customizer-global-cached-inline-styles">
+		@media only screen and (min-width:1350px) {
+			.et_pb_row {
+				padding: 27px 0
+			}
+
+			.et_pb_section {
+				padding: 54px 0
+			}
+
+			.single.et_pb_pagebuilder_layout.et_full_width_page .et_post_meta_wrapper {
+				padding-top: 81px
+			}
+
+			.et_pb_fullwidth_section {
+				padding: 0
+			}
+		}
+	</style>
+</head>
+
+<body
+	class="home page-template page-template-page-template-blank page-template-page-template-blank-php page page-id-12 et_pb_button_helper_class et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db">
+	<script type="application/javascript">
+		(function () {
+			var relList = document.createElement('link').relList;
+			if (!!(relList && relList.supports && relList.supports('prefetch'))) {
+				return;
+			}
+			var links = document.getElementsByTagName('link');
+			for (var i = 0; i < links.length; i++) {
+				var link = links[i];
+				if ('prefetch' === link.rel) {
+					link.rel = 'preload';
+				}
+			}
+		})();
+	</script>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-dark-grayscale">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+					values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0 0.49803921568627" />
+					<feFuncG type="table" tableValues="0 0.49803921568627" />
+					<feFuncB type="table" tableValues="0 0.49803921568627" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-grayscale">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+					values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0 1" />
+					<feFuncG type="table" tableValues="0 1" />
+					<feFuncB type="table" tableValues="0 1" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-purple-yellow">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+					values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+					<feFuncG type="table" tableValues="0 1" />
+					<feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-blue-red">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+					values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0 1" />
+					<feFuncG type="table" tableValues="0 0.27843137254902" />
+					<feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-midnight">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+					values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0 0" />
+					<feFuncG type="table" tableValues="0 0.64705882352941" />
+					<feFuncB type="table" tableValues="0 1" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-magenta-yellow">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+					values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0.78039215686275 1" />
+					<feFuncG type="table" tableValues="0 0.94901960784314" />
+					<feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-purple-green">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+					values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+					<feFuncG type="table" tableValues="0 1" />
+					<feFuncB type="table" tableValues="0.44705882352941 0.4" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-blue-orange">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+					values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0.098039215686275 1" />
+					<feFuncG type="table" tableValues="0 0.66274509803922" />
+					<feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+	<div id="page-container">
+
+		<div id="main-content">
+
+
+
+			<article id="post-12" class="post-12 page type-page status-publish hentry">
+
+
+				<div class="entry-content">
+					<div class="et-l et-l--post">
+						<div class="et_builder_inner_content et_pb_gutters3">
+							<div class="et_pb_section et_pb_section_0 et_section_regular et_pb_section--with-menu">
+
+
+
+
+
+
+								<div class="et_pb_row et_pb_row_0 et_pb_row--with-menu">
+									<div
+										class="et_pb_column et_pb_column_4_4 et_pb_column_0  et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column--with-menu">
+
+
+
+
+										<div
+											class="et_pb_module et_pb_menu et_pb_menu_0 et_pb_bg_layout_light  et_pb_text_align_right et_dropdown_animation_fade et_pb_menu--with-logo et_pb_menu--style-left_aligned">
+
+
+
+
+											<div class="et_pb_menu_inner_container clearfix">
+												<div class="et_pb_menu__logo-wrap">
+													<div class="et_pb_menu__logo">
+														<img decoding="async" width="150" height="150"
+															src="logo.jpg"
+															alt="" class="wp-image-19" />
+													</div>
+												</div>
+												<div class="et_pb_menu__wrap">
+													<div class="et_pb_menu__menu">
+														<nav class="et-menu-nav">
+															<ul id="menu-main_menu" class="et-menu nav">
+																<li id="menu-item-15"
+																	class="et_pb_menu_page_id-15 menu-item menu-item-type-custom menu-item-object-custom menu-item-15">
+																	<a
+																		href="#">Dextools</a>
+																</li>
+																<li id="menu-item-16"
+																	class="et_pb_menu_page_id-16 menu-item menu-item-type-custom menu-item-object-custom menu-item-16">
+																	<a href="https://t.me/thisisfineportal">Telegram</a></li>
+																<li id="menu-item-17"
+																	class="et_pb_menu_page_id-17 menu-item menu-item-type-custom menu-item-object-custom menu-item-17">
+																	<a href="https://twitter.com/finedogerc?s=21&t=SrEJihQwEOziuZrQtunrJg" target="_blank">Twitter</a>
+																</li>
+															</ul>
+														</nav>
+													</div>
+
+
+													<div class="et_mobile_nav_menu">
+														<div class="mobile_nav closed">
+															<span class="mobile_menu_bar"></span>
+														</div>
+													</div>
+												</div>
+
+											</div>
+										</div>
+									</div>
+
+
+
+
+								</div>
+
+
+							</div>
+							<div class="et_pb_section et_pb_section_1 et_section_regular">
+
+
+
+
+
+
+								<div class="et_pb_row et_pb_row_1">
+									<div
+										class="et_pb_column et_pb_column_4_4 et_pb_column_1  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+
+
+										<div
+											class="et_pb_module et_pb_text et_pb_text_0  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+
+
+											<div class="et_pb_text_inner">
+												<h1>FINE DOG</h1>
+												<h2>$FINE</h2>
+											</div>
+										</div>
+										<div class="et_pb_module et_pb_image et_pb_image_0">
+
+
+
+
+											<span class="et_pb_image_wrap "><img decoding="async" loading="lazy"
+													width="300" height="225"
+													src="logo.jpg"
+													alt="" title="7f8afa83-813c-4490-92f6-145b57efea13"
+													class="wp-image-20" /></span>
+										</div>
+										<div
+											class="et_pb_button_module_wrapper et_pb_button_0_wrapper et_pb_button_alignment_center et_pb_module ">
+											<a class="et_pb_button et_pb_button_0 et_pb_bg_layout_dark"
+												href="#"
+												target="_blank">Chart</a>
+												<a class="et_pb_button et_pb_button_0 et_pb_bg_layout_dark"
+												href="#"
+												target="_blank">Buy $FINE</a>
+										</div>
+									</div>
+
+
+
+
+								</div>
+
+
+							</div>
+							<div class="et_pb_section et_pb_section_2 et_section_regular">
+
+
+
+
+
+
+
+
+							</div>
+							<div class="et_pb_section et_pb_section_3 et_section_regular">
+
+
+
+
+
+
+								<div class="et_pb_row et_pb_row_3 et_pb_equal_columns et_pb_gutters3">
+									<div
+										class="et_pb_column et_pb_column_4_4 et_pb_column_4  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+
+
+										<div
+											class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_center et_pb_bg_layout_light">
+
+
+
+
+											<div class="et_pb_text_inner">
+												<h2>Tokenomics</h2>
+												<p>Total Supply – 100.000.000</p>
+												<p>Tax – 0 / 0</p>
+											</div>
+										</div>
+										<div
+											class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_center et_pb_bg_layout_light">
+
+
+
+
+											<div class="et_pb_text_inner">
+												<h2>Contract</h2>
+												<p>0x66f0520186cf85c8d0c8a63d4016B98aE2F96dCa</p>
+											</div>
+										</div>
+									</div>
+
+
+
+
+								</div>
+
+
+							</div>
+							<div class="et_pb_section et_pb_section_4 et_section_regular">
+
+
+
+
+
+
+								<div class="et_pb_row et_pb_row_4 et_pb_equal_columns et_pb_gutters3">
+									<div
+										class="et_pb_column et_pb_column_1_2 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough">
+
+
+
+
+										<div class="et_pb_module et_pb_image et_pb_image_2">
+
+
+
+
+											<span class="et_pb_image_wrap "><img decoding="async" loading="lazy"
+													width="600" height="413"
+													src="banner.jpg"
+													alt="" title="a22f6ea7-b623-4e41-b640-12d9b9912451"
+													srcset="banner.jpg 600w, banner.jpg 480w"
+													sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 600px, 100vw"
+													class="wp-image-22" /></span>
+										</div>
+									</div>
+									<div
+										class="et_pb_column et_pb_column_1_2 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+
+
+										<div
+											class="et_pb_module et_pb_text et_pb_text_4  et_pb_text_align_left et_pb_bg_layout_light">
+
+
+
+
+											<div class="et_pb_text_inner">
+												<p>This Is Fine is a two-pane image of an anthropomorphic dog trying to assure 
+													himself that everything is fine, despite sitting in a room that is engulfed 
+													in flames. Taken from an issue of the webcomic series Gunshow illustrated by 
+													K.C. Green and published in early January 2013, the cartoon is typically used 
+													as a reaction image to convey a sense of self-denial or acceptance in the 
+													face of a hopeless situation.</p>
+												<p>The comic originally comes from K.C. Green's Gunshow comic #648, 
+													actually titled "The Pills Are Working" or "On Fire", originally 
+													posted January 9th, 2013. [1] Green's drawings have been the basis 
+													of several other memes including Staredad, Dickbutt, Mother of 
+													God and I'm Okay With This. The comic, depicts a dog in a room 
+													that is burning to the ground. The dog reacts calmly, even as he 
+													slowly melts from the heat.
+												</p>
+											</div>
+										</div>
+									</div>
+
+
+
+
+								</div>
+
+
+							</div>
+							<div class="et_pb_section et_pb_section_5 et_section_regular">
+
+
+
+
+
+
+								<div class="et_pb_row et_pb_row_5 et_pb_equal_columns et_pb_gutters3">
+									<div
+										class="et_pb_column et_pb_column_1_2 et_pb_column_7  et_pb_css_mix_blend_mode_passthrough">
+
+
+
+
+										<div
+											class="et_pb_button_module_wrapper et_pb_button_1_wrapper et_pb_button_alignment_center et_pb_module ">
+											<a class="et_pb_button et_pb_button_1 et_pb_bg_layout_dark"
+												href="https://t.me/thisisfineportal" target="_blank">Telegram</a>
+										</div>
+									</div>
+									<div
+										class="et_pb_column et_pb_column_1_2 et_pb_column_8  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+
+
+										<div
+											class="et_pb_button_module_wrapper et_pb_button_2_wrapper et_pb_button_alignment_center et_pb_module ">
+											<a class="et_pb_button et_pb_button_2 et_pb_bg_layout_dark"
+												href="https://twitter.com/finedogerc?s=21&t=SrEJihQwEOziuZrQtunrJg" target="_blank">Twitter</a>
+										</div>
+									</div>
+
+
+
+
+								</div>
+
+
+							</div>
+							<div class="et_pb_section et_pb_section_6 et_pb_with_background et_section_regular">
+
+
+
+
+
+
+								<div class="et_pb_row et_pb_row_6">
+									<div
+										class="et_pb_column et_pb_column_4_4 et_pb_column_9  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+
+
+										<div
+											class="et_pb_module et_pb_text et_pb_text_5  et_pb_text_align_center et_pb_bg_layout_dark">
+
+
+
+
+											<div class="et_pb_text_inner">Copyright © 2023 Fine Dog $FINE</div>
+										</div>
+									</div>
+
+
+
+
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</article>
+
+
+
+		</div>
+
+
+	</div>
+
+	<link rel='stylesheet' id='wp-block-library-css'
+		href='wp-includes/css/dist/block-library/style.min.css' type='text/css' media='none'
+		onload="media='all'" />
+	<script type='text/javascript' src='wp-includes/js/jquery/jquery.min.js'
+		id='jquery-core-js'></script>
+	<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js'
+		id='jquery-migrate-js'></script>
+	<script type='text/javascript' id='jquery-js-after'>
+		jqueryParams.length && $.each(jqueryParams, function (e, r) {
+			if ("function" == typeof r) {
+				var n = String(r);
+				n.replace("$", "jQuery");
+				var a = new Function("return " + n)();
+				$(document).ready(a)
+			}
+		});
+	</script>
+	<script type='text/javascript' id='divi-custom-script-js-extra'>
+		//<![CDATA[
+		var DIVI = {
+			"item_count": "%d Item",
+			"items_count": "%d Items"
+		};
+		var et_builder_utils_params = {
+			"condition": {
+				"diviTheme": true,
+				"extraTheme": false
+			},
+			"scrollLocations": ["app", "top"],
+			"builderScrollLocations": {
+				"desktop": "app",
+				"tablet": "app",
+				"phone": "app"
+			},
+			"onloadScrollLocation": "app",
+			"builderType": "fe"
+		};
+		var et_frontend_scripts = {
+			"builderCssContainerPrefix": "#et-boc",
+			"builderCssLayoutPrefix": "#et-boc .et-l"
+		};
+		var et_pb_custom = {
+			"ajaxurl": "https:\/\/elmoerc.com\/wp-admin\/admin-ajax.php",
+			"images_uri": "https:\/\/elmoerc.com\/wp-content\/themes\/Divi\/images",
+			"builder_images_uri": "https:\/\/elmoerc.com\/wp-content\/themes\/Divi\/includes\/builder\/images",
+			"et_frontend_nonce": "6607421f19",
+			"subscription_failed": "Please, check the fields below to make sure you entered the correct information.",
+			"et_ab_log_nonce": "03e82b005d",
+			"fill_message": "Please, fill in the following fields:",
+			"contact_error_message": "Please, fix the following errors:",
+			"invalid": "Invalid email",
+			"captcha": "Captcha",
+			"prev": "Prev",
+			"previous": "Previous",
+			"next": "Next",
+			"wrong_captcha": "You entered the wrong number in captcha.",
+			"wrong_checkbox": "Checkbox",
+			"ignore_waypoints": "no",
+			"is_divi_theme_used": "1",
+			"widget_search_selector": ".widget_search",
+			"ab_tests": [],
+			"is_ab_testing_active": "",
+			"page_id": "12",
+			"unique_test_id": "",
+			"ab_bounce_rate": "5",
+			"is_cache_plugin_active": "no",
+			"is_shortcode_tracking": "",
+			"tinymce_uri": "https:\/\/elmoerc.com\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors",
+			"accent_color": "#7EBEC5",
+			"waypoints_options": []
+		};
+		var et_pb_box_shadow_elements = [];
+		//]]>
+	</script>
+	<script type='text/javascript' src='wp-content/themes/Divi/js/scripts.min.js'
+		id='divi-custom-script-js'></script>
+	<script type='text/javascript' src='wp-content/themes/Divi/core/admin/js/common.js'
+		id='et-core-common-js'></script>
+	<style id="et-builder-module-design-deferred-12-cached-inline-styles">
+		.et_pb_section_0.et_pb_section {
+			padding-top: 0;
+			padding-bottom: 0
+		}
+
+		.et_pb_menu_0.et_pb_menu ul li a {
+			font-family: 'Chewy', display;
+			font-size: 18px;
+			letter-spacing: 1px
+		}
+
+		.et_pb_menu_0.et_pb_menu {
+			background-color: #fff;
+			border-radius: 25px 25px 25px 25px
+		}
+
+		.et_pb_menu_0 {
+			padding-right: 25px;
+			padding-left: 25px
+		}
+
+		.et_pb_button_2,
+		.et_pb_button_1,
+		.et_pb_button_0,
+		.et_pb_menu_0,
+		.et_pb_menu_0 .sub-menu {
+			box-shadow: 6px 6px 18px 0 rgba(0, 0, 0, .3)
+		}
+
+		.et_pb_menu_0.et_pb_menu .et_mobile_menu,
+		.et_pb_menu_0.et_pb_menu .et_mobile_menu ul,
+		.et_pb_menu_0.et_pb_menu .nav li ul {
+			background-color: #fff !important
+		}
+
+		.et_pb_menu_0 .et_pb_menu_inner_container>.et_pb_menu__logo-wrap,
+		.et_pb_menu_0 .et_pb_menu__logo-slot {
+			width: auto;
+			max-width: 100%
+		}
+
+		.et_pb_menu_0 .et_pb_menu_inner_container>.et_pb_menu__logo-wrap .et_pb_menu__logo img,
+		.et_pb_menu_0 .et_pb_menu__logo-slot .et_pb_menu__logo-wrap img {
+			height: auto;
+			max-height: none
+		}
+
+		.et_pb_menu_0 .mobile_nav .mobile_menu_bar:before {
+			color: #f70c2f
+		}
+
+		.et_pb_menu_0 .et_pb_menu__icon.et_pb_menu__cart-button,
+		.et_pb_menu_0 .et_pb_menu__icon.et_pb_menu__search-button,
+		.et_pb_menu_0 .et_pb_menu__icon.et_pb_menu__close-search-button {
+			color: #7ebec5
+		}
+
+		.et_pb_section_1.et_pb_section {
+			padding-top: 0
+		}
+
+		.et_pb_text_0 h1 {
+			font-family: 'Chewy', display;
+			font-weight: 700;
+			font-size: 60px;
+			letter-spacing: 2px;
+			text-align: center
+		}
+
+		.et_pb_text_0 h2 {
+			font-family: 'Cherry Cream Soda', display;
+			font-weight: 700;
+			font-size: 40px;
+			text-align: center
+		}
+
+		.et_pb_image_0 {
+			text-align: center
+		}
+
+		.et_pb_button_2_wrapper .et_pb_button_2,
+		.et_pb_button_2_wrapper .et_pb_button_2:hover,
+		.et_pb_button_0_wrapper .et_pb_button_0,
+		.et_pb_button_0_wrapper .et_pb_button_0:hover,
+		.et_pb_button_1_wrapper .et_pb_button_1,
+		.et_pb_button_1_wrapper .et_pb_button_1:hover {
+			padding-right: 50px !important;
+			padding-left: 50px !important
+		}
+
+		body #page-container .et_pb_section .et_pb_button_0,
+		body #page-container .et_pb_section .et_pb_button_2,
+		body #page-container .et_pb_section .et_pb_button_1 {
+			border-width: 0 !important;
+			border-color: RGBA(255, 255, 255, 0);
+			border-radius: 25px;
+			letter-spacing: 1px;
+			font-family: 'Chewy', display !important;
+			background-color: #f70c2f
+		}
+
+		body #page-container .et_pb_section .et_pb_button_0:before,
+		body #page-container .et_pb_section .et_pb_button_0:after,
+		body #page-container .et_pb_section .et_pb_button_2:before,
+		body #page-container .et_pb_section .et_pb_button_2:after,
+		body #page-container .et_pb_section .et_pb_button_1:before,
+		body #page-container .et_pb_section .et_pb_button_1:after {
+			display: none !important
+		}
+
+		.et_pb_button_2,
+		.et_pb_button_2:after,
+		.et_pb_button_0,
+		.et_pb_button_0:after,
+		.et_pb_button_1,
+		.et_pb_button_1:after {
+			transition: all 300ms ease 0ms
+		}
+
+		.et_pb_text_1,
+		.et_pb_text_4 {
+			font-family: 'Cherry Cream Soda', display;
+			font-size: 16px;
+			letter-spacing: 2px
+		}
+
+		.et_pb_image_1,
+		.et_pb_image_2 {
+			text-align: left;
+			margin-left: 0
+		}
+
+		.et_pb_text_3,
+		.et_pb_text_2 {
+			font-family: 'Cherry Cream Soda', display;
+			font-weight: 700;
+			font-size: 18px;
+			letter-spacing: 1px
+		}
+
+		.et_pb_text_3 h2,
+		.et_pb_text_2 h2 {
+			font-family: 'Chewy', display;
+			font-weight: 700;
+			font-size: 40px;
+			text-align: center
+		}
+
+		.et_pb_section_4.et_pb_section {
+			padding-top: 54px
+		}
+
+		.et_pb_section_6.et_pb_section {
+			padding-top: 0;
+			padding-bottom: 0;
+			background-color: #f70c2f !important
+		}
+
+		.et_pb_row_6.et_pb_row {
+			padding-top: 0 !important;
+			padding-bottom: 0 !important;
+			padding-top: 0;
+			padding-bottom: 0
+		}
+
+		.et_pb_text_5 {
+			font-family: 'Chewy', display
+		}
+
+		.et_pb_column_6,
+		.et_pb_column_4,
+		.et_pb_column_2 {
+			border-radius: 25px 25px 25px 25px;
+			overflow: hidden;
+			padding-top: 50px;
+			padding-right: 50px;
+			padding-bottom: 50px;
+			padding-left: 50px;
+			box-shadow: 6px 6px 18px 0 rgba(0, 0, 0, .3)
+		}
+
+		@media only screen and (min-width:981px) {
+
+			.et_pb_row_3,
+			body #page-container .et-db #et-boc .et-l .et_pb_row_3.et_pb_row,
+			body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_3.et_pb_row,
+			body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_3.et_pb_row,
+			.et_pb_row_5,
+			body #page-container .et-db #et-boc .et-l .et_pb_row_5.et_pb_row,
+			body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_5.et_pb_row,
+			body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_5.et_pb_row {
+				width: 60%
+			}
+		}
+
+		@media only screen and (max-width:980px) {
+
+			.et_pb_text_0 h2,
+			.et_pb_text_2 h2,
+			.et_pb_text_3 h2 {
+				font-size: 40px
+			}
+
+			.et_pb_image_0 .et_pb_image_wrap img,
+			.et_pb_image_1 .et_pb_image_wrap img,
+			.et_pb_image_2 .et_pb_image_wrap img {
+				width: auto
+			}
+
+			.et_pb_row_3,
+			body #page-container .et-db #et-boc .et-l .et_pb_row_3.et_pb_row,
+			body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_3.et_pb_row,
+			body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_3.et_pb_row,
+			.et_pb_row_5,
+			body #page-container .et-db #et-boc .et-l .et_pb_row_5.et_pb_row,
+			body.et_pb_pagebuilder_layout.single #page-container #et-boc .et-l .et_pb_row_5.et_pb_row,
+			body.et_pb_pagebuilder_layout.single.et_full_width_page #page-container #et-boc .et-l .et_pb_row_5.et_pb_row {
+				width: 80%
+			}
+		}
+
+		@media only screen and (max-width:767px) {
+			.et_pb_text_0 h2 {
+				font-size: 32px
+			}
+
+			.et_pb_image_0 .et_pb_image_wrap img,
+			.et_pb_image_1 .et_pb_image_wrap img,
+			.et_pb_image_2 .et_pb_image_wrap img {
+				width: auto
+			}
+
+			.et_pb_text_2 h2,
+			.et_pb_text_3 h2 {
+				font-size: 40px
+			}
+		}
+	</style>
+</body>
+
+</html>
